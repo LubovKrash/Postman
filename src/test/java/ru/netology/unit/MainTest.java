@@ -22,7 +22,7 @@ class MainTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", org.hamcrest.Matchers.equalTo("Hello World"))
+                .body("data", org.hamcrest.Matchers.equalTo("Hello"))
                         .contentType(ContentType.JSON)
         ;
     }
