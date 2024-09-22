@@ -22,8 +22,8 @@ class MainTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", org.hamcrest.Matchers.equalTo("Hello World"))
-                        .header("Server", org.hamcrest.Matchers.equalTo("nginx/1.25.3"))
+                .body("data", org.hamcrest.Matchers.equalTo("Hello"))
+                        .body("Server", org.hamcrest.Matchers.equalTo("nginx/1.25.3"))
                         .contentType(ContentType.JSON)
         ;
     }
