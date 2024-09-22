@@ -23,6 +23,7 @@ class MainTest {
                 .then()
                 .statusCode(200)
                 .body("data", org.hamcrest.Matchers.equalTo("Hello"))
+                        .header("title", org.hamcrest.Matchers.equalTo("Postman Echo | Documentation | Postman API Network"))
                         .contentType(ContentType.JSON)
         ;
     }
